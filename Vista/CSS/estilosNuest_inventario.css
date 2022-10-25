@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&family=Pacifico&display=swap');
+
+body{
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    margin: 0;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container__flex{
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+/*------------------logo-login----------------------------------------------------*/
+.logo{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+ 
+}
+.fondo_prueba{     
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    position: absolute;
+    
+}
+.img_prueba{
+    height: 100px;
+    max-height: 100px;
+}
+
+.fondo_prueba:before{    
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);    
+    position: absolute;
+    
+    
+}
+.img_logo{
+    
+    position: relative;
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    margin: 5px 0px;
+    z-index: 1000;
+}
+
+
+.logueo{
+    width: 150px;
+    height: 30px;    
+    text-align: end;  
+    position: absolute;
+    top: 10px;
+    right: 8px;    
+}
+
+#btnlogin{
+    display: none;
+}
+
+.textlogin:hover{
+    background: rgb(154, 154, 154);
+}
+
+.textlogin:active{
+    background: rgba(222, 66, 58,0.9);
+}
+
+.menlogin{
+    position: absolute;    
+    top:5%;  
+    right: 5px;
+    width: 100px;
+    background: rgba(0,0,0,0.9); 
+    border: 3px solid #fff;
+    border-radius: 10px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;  
+    overflow: hidden;
+    transition: height 0.2s linear;  
+    z-index: 1000;
+}
+
+.mostrar{    
+    height: 30px;
+    border: 3px solid#000;
+}
+.lista_user{
+    width: 100%; 
+    text-align: center;
+}
+
+.userExist{
+    width: 100px;;   
+    padding: 10px;
+    line-height: 5px;
+    list-style: none;
+    margin-left: -40px;
+   
+}
+.userExist:hover{
+    background: rgb(154, 154, 154); 
+
+}
+.userExistlink{
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+/*-------------------------------------menu---------------------------------------*/
+.icon-menu{
+    display: none;
+}
+
+.main-nav{    
+    width: 80%;
+    background: rgb(0,0,0,0.7); 
+}
+.menu{    
+    width: 100%;     
+    display: flex;
+    margin: 0; 
+    justify-content: flex-end;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.menu_item{   
+    width: 15%;
+    height: 40px;
+    list-style: none;
+    padding: 10px;    
+    margin: 5px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(254, 236, 165);
+    
+}
+.menu_link{
+    cursor:pointer;
+    color: rgb(254, 236, 165);
+    text-decoration: none;
+    
+    
+}
+.menu_item:hover{
+    background: rgb(44,44,44);
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------imagen fondo---------------------------------*/
+.fondo img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    background-repeat: repeat;
+    
+}
+.fondo{
+    position: absolute;    
+}
+.fondo:before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.8);    
+    width: 100%;
+    height: 100%;
+}
+
+.texto_fondo{
+    position: absolute;
+    top: 45%;    
+    width: 70%;
+    font-size: 30px;
+    font-weight:100 ;    
+    
+}
+/*-------------------------------------------MAIN---------------------------*/
+
+
+.main {
+    margin: 30px 0px;
+    width: 100%;
+    top: 120px;
+}
+
+.grupo_inventario{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.lista_opciones{
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.titulo_opciones{
+    width: 100%;   
+    padding: 2px;    
+}
+
+
+button{
+    width: 100%;
+    padding: 5px;
+    background: rgba(109, 109, 109);
+    color: #fff;
+}
+button:hover{
+    background: rgb(154, 154, 154);
+}
+
+.lista_clientes{
+    border:2px solid rgb(254, 236, 165);
+    padding: 0px;
+    width: 78%;    
+}
+.titulo_inventario-lebarberia{
+    width: 200%;
+    padding: 10px;    
+    text-align: center;
+    border-bottom:2px solid rgb(254, 236, 165);
+    background: rgba(0,0,0,0.5);    
+}
+
+
+.default_inventario{
+    width: 100%;    
+    background: rgba(0,0,0,0.2);
+    padding: 5px;    
+}
+
+tr{
+    font-size: 15px;
+      
+}
+.tdTitulo{
+    color:rgb(254, 236, 165);
+}
+td{
+    border: 1px solid#fff;   
+    text-align: center;
+    height: 30px;
+}
+
+h1,h2,h3,h4,p{
+    width: 90%;
+    margin: auto;
+}
+
+.pagination{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 15px;  
+}
+
+/*----------------------PDF----------------------------------*/   
+.pdf{
+   height: 0;
+    margin-top: 10px;
+    
+}
+.fa-file-pdf{
+     font-size: 25px;
+     color: white;
+   
+}
+.fa-file-pdf:hover{
+    background: #EC5252; 
+   
+}
+.fa-file-pdf:active{
+    background: #D8D8D8;
+}
+
+
+
+/*---numeros paginacion-----*/
+.page-item{
+    padding: 8px 2px;
+    text-align: center;
+}
+.page-item:hover{
+    background: #EC5252; 
+   
+}
+.page-item:active{
+    background: #D8D8D8;
+}
+
+.page-link{
+    padding: 11px 10px;
+    text-decoration: none;
+    color: white;
+}
+/*--icons editar eliminar---*/
+.btn-info{
+    padding: 5px;
+}
+.btn-info:hover{
+    background: #455A64; 
+}
+.btn-info:active{
+    background: #D8D8D8;
+}
+.fa-edit{
+    color:#03a9f4;
+}
+
+.fa-trash-alt{
+    padding: 6px;
+}
+.fa-trash-alt:hover{
+    background: #455A64; 
+}
+.fa-trash-alt:active{
+    background: #D8D8D8;
+}
+.fa-trash-alt{
+    color: #EC5252
+}
+/*-----------------------------*/
+/*-------------HOVER TABLA POR LINEAS-------------------*/
+.default_inventario tr:hover {
+    color: rgba(236, 82, 82, 0.8);
+    background-image: linear-gradient(to right, transparent, rgba(216, 216, 216, .4) 60%, transparent);
+}
+/*---------------------------------------footer----------------------------------*/
+
+.footer{
+    position: relative;
+    display: block;
+    top: 78%;
+    width: 100%;
+    margin-top: 10px; 
+}
+.column_33{
+    width: 32%;
+    color: rgb(254, 236, 165);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;  
+}
+.column_title{
+    padding: 5px;
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 5px;
+    justify-content: center;
+    margin-left: 0; 
+}
+
+.column_text{
+    padding: 5px;
+    justify-content: center;
+    font-size: 14px;
+    margin: 3px;   
+} 
+
+.icon {
+    color:#fff;
+}
+
+.column_100 {
+    width: 96%;
+    color: rgb(254, 236, 165);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;  
+    border-top: 1px solid
+}
+
+.copy_1{
+    text-align: center;
+    color: #fff;
+}
+.copy_2{
+    text-align: center;
+    font-size: 13px;
+}
+.div_logo{
+   text-align: center;
+    
+}
+.logo_sena {
+   width: 50px;
+   height: 50px;
+    margin: 5px;
+    position: relative;
+    left: 47%; 
+}
+
+
+
+/*--------------------------------------------Agregar proveedor---------------------------------------------------------------*/
+
+
+
+.agregarInventario{
+    position: relative;    
+    box-sizing: border-box;
+    width: 200%;
+    background: rgba(109, 109, 109);
+    text-align: center;
+    list-style: none; 
+    height: 0;
+    margin: 0;
+    padding: 0px;   
+    overflow: hidden;
+    transition: height 0.2s linear;       
+}
+
+.agregarInventario h1{
+    width: 100%;
+    font-size: 20px;
+    margin: 2px;
+    margin-top: 10px;
+}
+
+.form-group{    
+    display: inline-block;  
+}
+
+.form-group input{
+     width: 95%;
+     padding: 4px;
+     margin-top: 5px;    
+     margin-bottom: 10px;
+}
+
+.btnsAgregarCliente{
+    margin-top: 10px;
+}
+.btnCerrarAgregar{
+    width: 70px;
+    height: 22px;
+    padding: 0;
+    color: #fff;   
+}
+.btnCerrarAgregar1{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+#btnAgregarC{
+    margin: 5px;
+}
+
+#btnAgregarV:hover, #btnCerrarAgregar:hover{
+    background: rgb(110, 219, 255 );
+    cursor: pointer;
+}
+
+.mostrar{
+    height: 160px;
+}
+
+
+
+
+/*-------------Consultar proveedor----------------------------------------------------------------------------------*/
+
+
+
+.tabla_consultar{ 
+    position: relative;
+    left: -107%;
+    box-sizing: border-box;
+    width: 206%;    
+    background: rgba(109, 109, 109);
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s linear;    
+}
+.tabla_consultarE{ 
+    position: relative;   
+    box-sizing: border-box;
+    width: 100%;    
+    background: rgba(109, 109, 109);
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s linear;   
+}
+.form_cliente{
+    text-align: center;    
+}
+
+#inputConsulta{
+    width: 40%;
+    margin-top: 15px;    
+}
+#enviarConsulta, #btn_volver{    
+    cursor: pointer;
+    margin: 10px 0px; 
+    padding: px;
+}
+
+.mostrar2{
+    height: 130px;
+}
+
+
+/**********************************************************************/
+
+@media screen and (max-width:580px){
+.icon_menu{
+    position:relative;
+    display: block;
+    cursor: pointer;
+    border: 1px solid#fff;
+    border: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+}
+    .fa-bars{
+        font-size: 25px; 
+    }
+    
+.fa-bars:hover{
+        background: rgba(159,159,159,0.2);
+}
+    
+.fa-bars:active{
+    background: rgba(222, 66, 58,0.9);
+}
+    
+
+
+.menu{ 
+    z-index: 200000;
+    display: block;
+    top: 70px;
+    left: -140px;
+    width: 100%; 
+    background: rgb(0,0,0,0.9);
+    padding:0;
+    margin: 0; 
+    height: 0;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.3s linear;  
+}
+
+
+.menu_link{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin: 0;
+    text-decoration:none;
+    cursor:pointer;
+    color: rgb(254, 236, 165);
+   border-bottom: 1px solid#fff;
+   
+}
+
+.menu_link:hover {
+    color: rgba(236, 82, 82, 0.8);
+    background-image: linear-gradient(to right, transparent, rgba(216, 216, 216, .2) 60%, transparent);
+}
+.menu_link:active{
+    background: rgba(222, 66, 58,0.9);
+}
+    
+.menu_item{
+    width: 100%;
+    list-style: none; 
+    font-size: 10px;
+    padding: 0;
+    margin-left: 0px;      
+}
+    .mostrar3{
+    height: 373px;
+    
+}  
+    tr{
+      font-size: 12px;   
+    }
+    td{
+      font-size: 12px;   
+    }
+   
+}
+
+
+/*****************************581*****************************************/
+
+@media (min-width:581px){
+
+ .fa-bars{
+    display: none;
+}
+
+.main-nav{    
+    width: 80%;
+    background: rgb(0,0,0,0.7); 
+}
+.menu{    
+    width: 100%;     
+    display: flex;
+    margin: 0; 
+    justify-content: flex-end;
+    margin-top: 40px;
+    position: relative;  
+    text-align: center;
+}
+
+.menu_item{   
+    width: 15%;
+    height: 40px;
+    list-style: none;
+    padding: 0px 10px;    
+    margin: 5px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(254, 236, 165);  
+}
+.menu_link{
+    cursor:pointer;
+    color: rgb(254, 236, 165);
+    text-decoration: none;
+  
+    
+}
+.menu_item:hover{
+    background: rgb(44,44,44);
+    cursor: pointer;
+}
+  
+
+.menu_link:active{
+    background: rgba(222, 66, 58,0.9);
+}
+    
+  
+    tr{
+      font-size: 15px;   
+    }
+    td{
+      font-size: 15px;   
+    }
+   
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&family=Pacifico&display=swap');
+
+body{
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    margin: 0;
+    
+}
+
+*{ 
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container__flex{
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+/*------------------logo-login----------------------------------------------------*/
+.logo{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+}
+.fondo_prueba{     
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    position: absolute;
+    
+}
+.img_prueba{
+    height: 100px;
+    max-height: 100px;
+}
+
+.fondo_prueba:before{    
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);    
+    position: absolute;
+    
+    
+}
+.img_logo{
+    
+    position: relative;
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    margin: 5px 0px;
+    z-index: 1000;
+}
+
+.logueo{
+    width: 150px;
+    height: 30px;    
+    text-align: end;  
+    position: absolute;
+    top: 10px;
+    right: 8px;    
+}
+.inicioSesion{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.inicioSesion:hover{
+    color:rgb(154, 154, 154);
+}
+.inicioSesion:active{
+    color:rgba(222, 66, 58,0.9);
+}
+/*
+#btnlogin{
+    display: none;
+}
+
+.textlogin:hover{
+    background: rgb(154, 154, 154);
+}
+
+.textlogin:active{
+    background: rgba(222, 66, 58,0.9);
+}
+
+.menulogin{
+    position: absolute;    
+    top:30%;  
+    width: 250px;    
+    background: rgba(0,0,0,0.9); 
+    border-radius: 10px;    
+    padding: 0;
+    margin: 0;        
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.3s linear;  
+    z-index: 1000;
+}
+
+.mostrar{    
+    height: 308px;
+    border: 3px solid#000;
+}
+.menu_login-titulo{
+    background: RGB(100, 30, 22);
+    border-bottom: 2px solid#000;
+   
+}
+
+.titulo_ingreso{
+    margin: 0;
+}
+.subtitulo_ingreso{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.input_login{
+    padding: 10px;
+     
+}
+.textcuenta{
+   display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+       
+}
+.textcontra{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+}
+.btnenvia{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 3px;
+    width: 100px;
+    cursor:pointer;
+}
+.olvide{
+    margin-top: 25px;    
+}
+.small{
+    text-decoration: none;
+}
+
+*/
+/*------------------------------------------------MENU----------------------------*/
+.icon-menu{
+    display: none;
+}
+
+.main-nav{    
+    width: 100%;
+    background: rgb(0,0,0,0.7); 
+}
+.menu{    
+    width: 100%;     
+    display: flex;
+    margin: 0; 
+    justify-content: flex-end;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.menu_item{   
+    width: 30%;
+    height: 40px;
+    list-style: none;
+    padding: 20px;    
+    margin: 5px;
+    text-align: center;
+    line-height: 0px;
+    
+    
+}
+.menu_link{
+    color: rgb(254, 236, 165);
+    text-decoration: none;
+}
+.menu_item:hover{
+    background: rgb(44,44,44);
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------imagen fondo---------------------------------*/
+
+.fondo img{
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    
+}
+.fondo{
+    position: relative;    
+}
+.fondo:before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.5);    
+    width: 100%;
+    height: 100%;
+}
+
+.texto_fondo{
+    position: absolute;
+    top: 30%;    
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight:100;    
+    
+}
+.div_logo_2{
+    position: absolute;
+    top: 40%;   
+    width: 100%;
+ 
+}
+.logo_2{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 45%;
+    border-radius:50%;
+    
+    
+    
+}
+
+/*--------------------------------------------Bienvenidos----------------------------*/
+.grupo_bienvenidos{
+    margin: 20px;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid#ccc;
+    
+}
+.grupo_title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    
+} 
+
+.grupo_txt{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(254, 236, 165);
+}
+
+.grupo_txt2{
+    font-weight: bold; 
+    font-size: 27px;    
+    margin-bottom: 20px;
+    color: rgb(254, 236, 165);
+}
+
+h1,h2,h3,h4,p{
+    width: 90%;
+    margin: auto;
+}
+/*---------------------------------------imagenes servicios---------------------------------*/
+
+.grupo_servicios img{
+    width: 190px;
+    height: 195px;
+    object-fit: cover;
+}
+
+
+.grupo_servicios {
+    margin: 30px 0;
+}
+.titulo_servicios-lebarberia{
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+.servicios_lebarberia{
+    margin:10px px;
+}
+
+.titulo_servicio{
+    margin-bottom: 15px;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold; 
+    
+        
+}
+
+.column_50-33{
+    border: 1px solid#fff;
+    position: relative;
+}
+
+.column_50-33:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+}
+
+
+/*--------------------------------------------footer informacion---------------------------------------------------------------*/
+
+
+.column_33{
+    width: 32%;
+    color: rgb(254, 236, 165);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;  
+}
+.column_title{
+    padding: 5px;
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 5px;
+    justify-content: center;
+    margin-left: 0; 
+}
+
+.column_text{
+    padding: 5px;
+    justify-content: center;
+    font-size: 14px;
+    margin: 3px;   
+} 
+
+.icon {
+    color:#fff;
+}
+
+.column_100 {
+    width: 96%;
+    color: rgb(254, 236, 165);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;  
+    border-top: 1px solid;
+}
+
+.copy_1{
+    text-align: center;
+    color: #fff;
+}
+.copy_2{
+    text-align: center;
+    font-size: 13px;
+}
+.div_logo{
+   text-align: center;
+    
+}
+.logo_sena {
+   width: 50px;
+   height: 50px;
+    margin: 5px;
+    position: relative;
+    left: 47%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
